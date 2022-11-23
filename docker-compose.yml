@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+  database:
+    image: postgres:latest
+    container_name: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: nestjs_jwt_refresh_token_tutorial
